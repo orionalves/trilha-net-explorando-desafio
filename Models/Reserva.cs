@@ -33,26 +33,22 @@ namespace DesafioProjetoHospedagem.Models
 
         public int ObterQuantidadeHospedes()
         {
-            // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
             int quantidadeDeHospedes = Hospedes.Count;
             return quantidadeDeHospedes;
         }
 
-        public decimal CalcularValorDiaria()
+        public decimal CalcularValorTotal()
         {
-            // TODO: Retorna o valor da diária
-            // Cálculo: DiasReservados X Suite.ValorDiaria
-            // *IMPLEMENTE AQUI*
-            decimal valor = 0;
+            decimal valorTotal = DiasReservados * Suite.ValorDiaria;
 
             // Regra: Caso os dias reservados forem maior ou igual a 10, conceder um desconto de 10%
             // *IMPLEMENTE AQUI*
             if (true)
             {
-                valor = 0;
+                valorTotal = 0;
             }
 
-            return valor;
+            return valorTotal;
         }
     }
 }
